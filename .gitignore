@@ -1,5 +1,15 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# docs
+/docs
+docs
+
+# Skills
+.agents
+/.agents
+.claude
+/.claude
+
 # dependencies
 /node_modules
 /.pnp
@@ -9,6 +19,8 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+/.vscode
+.vscode
 
 # testing
 /coverage
