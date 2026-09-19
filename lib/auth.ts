@@ -7,6 +7,7 @@ import { requiredEnv } from "./env";
 import { nextCookies } from "better-auth/next-js";
 
 export const auth = betterAuth({
+  trustedOrigins: process.env.BETTER_AUTH_URL ? [process.env.BETTER_AUTH_URL] : undefined,
   database: drizzleAdapter(db, {
     provider: "pg",
   }),
